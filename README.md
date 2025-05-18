@@ -1,6 +1,4 @@
-python
-
-Import Libraries
+import Libraries
 
 import numpy as np import pandas as pd import yfinance as yf
 import matplotlib.pyplot as plt from sklearn.preprocessing import MinMaxScaler from sklearn.metrics
@@ -61,3 +59,4 @@ plt.figure(figsize=(12,6)) plt.plot(data.index[train_size+look_back:],
 y_test[0], label='Actual Price') plt.plot(data.index[train_size+look_back:], test_predict[:,0], label='Predicted Price')
 plt.title(f"{ticker} Stock Price Prediction (LSTM)") plt.xlabel('Date')
 plt.ylabel('Price ($)') plt.legend() plt.show()
+
